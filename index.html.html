@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aarambh Education</title>
+  <meta name="description" content="Aarambh Education - Tuition for Classes 6-12 | 3 days trial" />
+  <style>
+    :root{--accent:#0b6e4f;--muted:#666}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;line-height:1.4;margin:0;color:#111}
+    header{background:linear-gradient(90deg,#0b6e4f, #0f9d6b);color:white;padding:18px 16px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:700;font-size:20px;letter-spacing:1px}
+    .cta{background:white;color:var(--accent);padding:8px 12px;border-radius:10px;font-weight:600;text-decoration:none}
+    main{padding:18px}
+    .hero{display:flex;gap:12px;align-items:center}
+    .hero-left{flex:1}
+    h1{margin:0 0 8px;font-size:20px}
+    p.lead{margin:0 0 12px;color:var(--muted)}
+    .quick{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:white;padding:10px 12px;border-radius:8px;text-decoration:none;display:inline-block}
+    section{margin-top:18px}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .card{padding:12px;border-radius:10px;border:1px solid #eee;background:#fff}
+    .small{font-size:13px;color:var(--muted)}
+    form{display:grid;gap:8px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #ddd;font-size:14px}
+    footer{padding:18px;text-align:center;color:var(--muted);font-size:13px}
+    /* Responsive */
+    @media(min-width:720px){
+      h1{font-size:28px}
+      .cards{grid-template-columns:repeat(3,1fr)}
+    }
+    /* WhatsApp floating */
+    .wa{position:fixed;right:14px;bottom:14px;background:#25D366;color:white;padding:12px;border-radius:50%;box-shadow:0 6px 18px rgba(0,0,0,0.12);text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AE · Aarambh Education</div>
+    <a class="cta" href="#admission">3 days trial</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Welcome to Aarambh Education — Tuition that actually helps.</h1>
+        <p class="lead">Simple notes, doubt clearing, small batches. Classes for Class 6 to 12 (Commerce & Science). 3-day free trial available.</p>
+        <div class="quick">
+          <a class="btn" href="#courses">View Courses</a>
+          <a class="btn" href="#notes">Free Notes</a>
+          <a class="btn" href="#admission">Apply Now</a>
+        </div>
+      </div>
+      <div class="hero-right" style="min-width:110px;text-align:right">
+        <div style="background:#fff;padding:10px;border-radius:10px;color:var(--accent);font-weight:700">Aarambh Education</div>
+        <div class="small" style="margin-top:10px">Location: 342, Bhim Basti, Jaunapur, New Delhi</div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <h2 style="margin:8px 0">Our Courses</h2>
+      <div class="cards">
+        <div class="card"><strong>Class 6-8</strong><div class="small">Maths, Science, English — Concept + Practice</div></div>
+        <div class="card"><strong>Class 9-10</strong><div class="small">NCERT-based strong foundation</div></div>
+        <div class="card"><strong>Class 11-12</strong><div class="small">Commerce & Science — Board + Competitive prep</div></div>
+      </div>
+    </section>
+
+    <section id="notes">
+      <h2 style="margin:8px 0">Free Notes & Downloads</h2>
+      <div class="cards">
+        <div class="card"><strong>Class 9 Maths</strong><div class="small">Chapter-wise WhatsApp-style notes (PDF)</div><a class="small" href="#">Download</a></div>
+        <div class="card"><strong>Class 10 Science</strong><div class="small">Short notes + important Qs</div><a class="small" href="#">Download</a></div>
+        <div class="card"><strong>Class 11 Accounts</strong><div class="small">Sample problems & tips</div><a class="small" href="#">Download</a></div>
+      </div>
+    </section>
+
+    <section id="admission">
+      <h2 style="margin:8px 0">Admission / Trial Request</h2>
+      <p class="small">Fill this form — we will contact you on WhatsApp for schedule. (Or send a message on WhatsApp: <strong>9315528510</strong>)</p>
+      <!-- Simple form using formsubmit.co - change the action to your form handler if you want -->
+      <form action="https://formsubmit.co/youremail@example.com" method="POST">
+        <input type="text" name="name" placeholder="Student's name" required />
+        <input type="tel" name="phone" placeholder="Phone (WhatsApp)" required />
+        <select name="class" required>
+          <option value="">Select class</option>
+          <option>6-8</option>
+          <option>9-10</option>
+          <option>11-12</option>
+        </select>
+        <textarea name="message" rows="3" placeholder="Any message (timings, preferred subjects)"></textarea>
+        <input type="hidden" name="_subject" value="Aarambh Admission Request" />
+        <button class="btn" type="submit">Send Request</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2 style="margin:8px 0">Contact</h2>
+      <div class="card">
+        <strong>Address:</strong> 342, Bhim Basti, Jaunapur, New Delhi 110047<br/>
+        <strong>Phone:</strong> <a href="tel:9315528510">9315528510</a><br/>
+        <strong>Instagram:</strong> <a href="https://instagram.com/aarambheducation" target="_blank">@aarambheducation</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="wa" href="https://wa.me/919315528510" target="_blank" title="WhatsApp">WA</a>
+
+  <footer>
+    © Aarambh Education · AE · Built with ❤️
+  </footer>
+
+  <script>
+    // small JS: optional - clean URL after formsubmit
+    if(window.location.hash=="#thanks"){
+      alert('Thanks! We received your request. We will contact you soon.');
+      history.replaceState(null, '', window.location.pathname);
+    }
+  </script>
+</body>
+</html>
